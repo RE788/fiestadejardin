@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #283c86, #45a247);
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+/*CUERPO*/
+
+header {
+    background: linear-gradient(to right, #1aec1d, #283c);
+    margin: 10px;
+    max-width: 600px;
+    max-height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 130px;
+    font-weight: bold;
+}
+
+a {
+    color: #1aec1d;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: aqua;
+    color: #121a38;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+.columna1 {
+    background: linear-gradient(to right, #283c86, #1aec1d);
+    width: 100px;
+    height: 80px;
+    border-radius: 0 300px 0 300px;
+    box-shadow: 10px 10px 5px #121a38;
+}
+
+/*FOOTER*/
+
+footer {
+    background: linear-gradient(to right, #1aec1d, #283c);
+    margin: 10px;
+    max-width: 600px;
+    max-height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 70px;
+    letter-spacing: -8px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 600px) {
+
+    .columna1 {
+        background: linear-gradient(to right, #283c86, #1aec1d);
+        width: 200px;
+        height: 80px;
+        border-radius: 0 300px 0 300px;
+        box-shadow: #283c86;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .columna1 {
+        background: linear-gradient(to right, #283c86, #1aec1d);
+        width: 200px;
+        height: 80px;
+        border-radius: 0 300px 0 300px;
+        box-shadow: #283c86;
+    }
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: -8px;
+    }
+
+    
+
+    li {
+        margin-right: 20px;
+        margin-left: 50px;
+    }
+}
